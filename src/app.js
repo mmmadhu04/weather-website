@@ -17,14 +17,14 @@ app.use(express.static(path.join(__dirname, '../public')))
 app.get('', (req, res) => {
     res.render('index', {
         title : 'Weather app',
-        name : 'Madhu'
+        name : 'Madhu M M'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title : 'About page',
-        name : 'Madhu'
+        name : 'Madhu M M'
     })
 })
 
@@ -32,7 +32,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title : 'Help page',
         msg : 'Welcome to help page ! Enter the location you want to search and click on Search button !',
-        name : 'Madhu'
+        name : 'Madhu M M'
     })
 })
 
@@ -83,7 +83,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('error', {
         msg: '404 Error !',
-        name: 'Madhu',
+        name: 'Madhu M M',
         title: '404'
     })
 })
